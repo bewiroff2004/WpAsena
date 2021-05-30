@@ -34,7 +34,7 @@ Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lan
                 message.jid, 
                 fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/Edited_20210227_152650.mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: "Founder Tarafından Banlandın!" }
+                { mimetype: Mimetype.gif, caption: "Azizoff Tərəfindən Banlandın!" }
             )
             await message.client.sendMessage(message.jid,'```Haha Loser``` ' +'@' + message.reply_message.data.participant.split("@")[0] + ' 😈', MessageType.text, {contextInfo: {mentionedJid: [message.reply_message.data.participant]}});
             await message.client.groupRemove(message.jid, [message.reply_message.data.participant]);
@@ -47,9 +47,9 @@ Asena.addCommand({pattern: 'ban ?(.*)', fromMe: true, onlyGroup: true, desc: Lan
                 message.jid, 
                 fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/Edited_20210227_152650.mp4"),
                 MessageType.video, 
-                { mimetype: Mimetype.gif, caption: "Founder Tarafından Banlandın!" }
+                { mimetype: Mimetype.gif, caption: "Azizoff Tərəfindən Banlandın!" }
             )
-            await message.client.sendMessage(message.jid,'```Haha Loser``` ' + etiketler + '👾', MessageType.text, {contextInfo: {mentionedJid: message.mention}});
+            await message.client.sendMessage(message.jid,'```Haha Loser``` ' + etiketler + '🛂', MessageType.text, {contextInfo: {mentionedJid: message.mention}});
             await message.client.groupRemove(message.jid, message.mention);
         } else {
             return await message.client.sendMessage(message.jid,Lang.GIVE_ME_USER,MessageType.text);
